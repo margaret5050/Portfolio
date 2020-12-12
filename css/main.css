@@ -1,0 +1,205 @@
+body{
+  background-color:#FDFD96;
+  font-family: 'Asap', sans-serif;
+}
+
+h2{
+  letter-spacing: 2px;
+  padding: 30px 0 0 0;
+  text-transform:uppercase;
+  text-align: center;
+}
+
+.paragraphs p {
+padding: 150px 0 0 0;
+text-align: center;
+}
+
+.container1{
+  height:10em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: #cb99c9;
+  color:black;
+}
+
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h4 {
+  font-size:20px;
+  margin-top:20px;
+}
+h4{
+  margin-top: 35px;
+  color: #fadadd;
+}
+#awards{
+  text-align:center;
+}
+
+#projects{
+  text-align: center;
+  padding-top:40px;
+  color: black;
+  letter-spacing: 2px;
+  text-transform:uppercase;
+}
+iframe {
+  margin-left: 25px;
+  padding-bottom: 25px;
+  border: none;
+  padding-top: 25px;
+  justify-content: space-around
+  display:flex;
+  border-color:#FDFD96
+  border-style:solid;
+}
+
+img {
+  margin-left: 25px;
+  padding-bottom: 25px;
+  border: none;
+  padding-top: 25px;
+  justify-content: space-around
+  display:flex;
+  border-color:#FDFD96
+  border-style:solid;
+}
+
+.box.content {
+  margin: 20px 0 0 0;
+}
+
+.left .content .social {
+  margin: 30px 0 0 0;
+}
+.left .content .social a {
+  padding: 0 2px;
+  color: #fadadd;
+}
+
+.left .content .social a:hover {
+  color:black;
+}
+
+
+nav {
+  background: #cb99c9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Asap', sans-serif;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 3px;
+}
+.nav-links a:hover{
+color: #FDFD96;
+}
+
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 82vh;
+    top: 8vh;
+    background-color: #cb99c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade{
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+
+
+
+
+
+
+
+
+
